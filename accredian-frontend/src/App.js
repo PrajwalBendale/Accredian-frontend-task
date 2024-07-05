@@ -58,11 +58,12 @@ const App = () => {
           //formik();
           resetForm();
           setOpen(false);
-          toast.success(`${response.data.message}`);
+          toast.success(response.data.message);
         } else {
           toast.error(`${response.data.message}`);
         }
       } catch (error) {
+        toast.error(`${error}`);
         console.log(error);
       }
     },
