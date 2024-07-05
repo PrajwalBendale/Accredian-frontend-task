@@ -48,7 +48,7 @@ const App = () => {
       // Handle form submission
       try {
         const response = await axios.post(
-          `https://accredian-backend-task-37od.onrender.com:3010/referral`,
+          `https://accredian-backend-task-37od.onrender.com/referral`,
           values
         );
         // console.log(response);
