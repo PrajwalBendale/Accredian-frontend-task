@@ -101,7 +101,7 @@ const App = () => {
         }}
       >
         <Grid2 container spacing={2} alignItems="center">
-          <Grid2 item xs={12} md={3}>
+          <Grid2 item xs={12} md={5}>
             <Box
               display="flex"
               flexDirection="column"
@@ -124,9 +124,9 @@ const App = () => {
               </Button>
             </Box>
           </Grid2>
-          <Grid2 item xs={12} md={3}>
+          <Grid2 item xs={12} md={6}>
             <div>
-              <img src={heroImg} width={814} height={725} alt="Accredian" />
+              <img src={heroImg} width={725} height={725} alt="Accredian" />
             </div>
           </Grid2>
         </Grid2>
