@@ -21,6 +21,7 @@ import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
 import { toast, ToastContainer } from "react-toastify";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import img from "./noteImg.png";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -110,6 +111,13 @@ const App = () => {
               height="100%"
               textAlign="center"
             >
+              <img
+                src={img}
+                width={"120px"}
+                height={"auto"}
+                style={{ position: "absolute", top: "28%", left: "8%" }}
+                alt=""
+              />
               <Typography variant="h1" fontWeight={700}>
                 Let's Learn & Earn
               </Typography>
@@ -128,14 +136,51 @@ const App = () => {
             </Box>
           </Grid2>
           <Grid2 item xs={12} md={6}>
-            <div>
-              <img
-                src={heroImg}
-                width={"100%"}
-                height={"auto"}
-                alt="Accredian"
-              />
-            </div>
+            <img
+              src={img}
+              width={"120px"}
+              height={"auto"}
+              style={{
+                position: "absolute",
+                top: "22%",
+                right: "8%",
+                rotate: "180deg",
+              }}
+              alt=""
+            />
+            <img
+              src={img}
+              width={"120px"}
+              height={"auto"}
+              style={{
+                position: "absolute",
+                top: "12%",
+                right: "42%",
+                rotate: "290deg",
+                zIndex: "99",
+              }}
+              alt=""
+            />
+            <img
+              src={heroImg}
+              width={"100%"}
+              height={"auto"}
+              alt="Accredian"
+              style={{ position: "relative", zIndex: "99" }}
+            />
+            <img
+              src={img}
+              width={"80px"}
+              height={"auto"}
+              style={{
+                position: "absolute",
+                top: "50%",
+                right: "42%",
+                rotate: "290deg",
+                zIndex: "99",
+              }}
+              alt=""
+            />
           </Grid2>
         </Grid2>
       </Container>
