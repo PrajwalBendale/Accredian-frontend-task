@@ -153,7 +153,7 @@ const App = () => {
                 Please submit details for Refer
               </Typography>
               <TextField
-                label="Referrer Name"
+                label="Your Name"
                 name="referrerName"
                 onChange={formik.handleChange}
                 value={formik.values.referrerName}
@@ -167,7 +167,7 @@ const App = () => {
                 sx={{ m: 1 }}
               />
               <TextField
-                label="Referrer Email"
+                label="Your Email"
                 name="referrerEmail"
                 onChange={formik.handleChange}
                 value={formik.values.referrerEmail}
@@ -181,7 +181,7 @@ const App = () => {
                 sx={{ m: 1 }}
               />
               <TextField
-                label="Referee Name"
+                label="Person's Name to whom to Refer"
                 name="refereeName"
                 onChange={formik.handleChange}
                 value={formik.values.refereeName}
@@ -195,7 +195,7 @@ const App = () => {
                 sx={{ m: 1 }}
               />
               <TextField
-                label="Referee Email"
+                label="Person's Email to whom to Refer"
                 name="refereeEmail"
                 onChange={formik.handleChange}
                 value={formik.values.refereeEmail}
