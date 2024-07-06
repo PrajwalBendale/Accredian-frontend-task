@@ -127,7 +127,12 @@ const App = () => {
           </Grid2>
           <Grid2 item xs={12} md={6}>
             <div>
-              <img src={heroImg} width={600} height={"auto"} alt="Accredian" />
+              <img
+                src={heroImg}
+                width={"100%"}
+                height={"auto"}
+                alt="Accredian"
+              />
             </div>
           </Grid2>
         </Grid2>
