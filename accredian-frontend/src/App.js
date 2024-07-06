@@ -223,6 +223,7 @@ const App = () => {
                 endIcon={<SendIcon />}
                 color="primary"
                 sx={{ m: 1 }}
+                size="medium"
               >
                 Submit
               </Button>
