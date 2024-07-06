@@ -115,7 +115,7 @@ const App = () => {
                 src={img}
                 width={"120px"}
                 height={"auto"}
-                style={{ position: "absolute", top: "28%", left: "8%" }}
+                style={{ position: "absolute", top: "28%", left: "18%" }}
                 alt=""
               />
               <Typography variant="h1" fontWeight={700}>
@@ -143,20 +143,20 @@ const App = () => {
               style={{
                 position: "absolute",
                 top: "22%",
-                right: "8%",
+                right: "18%",
                 rotate: "180deg",
               }}
               alt=""
             />
             <img
               src={img}
-              width={"120px"}
+              width={"80px"}
               height={"auto"}
               style={{
                 position: "absolute",
                 top: "12%",
-                right: "42%",
-                rotate: "290deg",
+                right: "36%",
+                rotate: "180deg",
                 zIndex: "99",
               }}
               alt=""
