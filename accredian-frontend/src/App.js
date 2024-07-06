@@ -5,6 +5,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import {
   AppBar,
+  Box,
   Button,
   Container,
   Modal,
@@ -13,11 +14,13 @@ import {
   Typography,
 } from "@mui/material";
 import logo from "./logo.png";
+import heroImg from "./hero-image.png";
 import { palette } from "@mui/system";
 import SendIcon from "@mui/icons-material/Send";
 import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
 import { toast, ToastContainer } from "react-toastify";
+import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -90,16 +93,44 @@ const App = () => {
           </nav>
         </Toolbar>
       </AppBar>
-      <div className="hero">
-        <Typography variant="h3">Refer & Earn</Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={() => setOpen(true)}
-        >
-          Refer Now
-        </Button>
-      </div>
+      <Container
+        sx={{
+          mt: 5,
+          bgcolor: "#EEF5FF",
+          borderRadius: 4,
+        }}
+      >
+        <Grid2 container spacing={2} alignItems="center">
+          <Grid2 item xs={12} md={3}>
+            <Box
+              display="flex"
+              flexDirection="column"
+              justifyContent="center"
+              alignItems="center"
+              height="100%"
+              textAlign="center"
+            >
+              <Typography variant="h2">Let's Learn & Earn</Typography>
+              <Typography variant="h5" color="textSecondary" paragraph>
+                Get a chance to win up-to Rs. 15,000
+              </Typography>
+
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={() => setOpen(true)}
+              >
+                Refer Now
+              </Button>
+            </Box>
+          </Grid2>
+          <Grid2 item xs={12} md={3}>
+            <div>
+              <img src={heroImg} width={814} height={725} alt="Accredian" />
+            </div>
+          </Grid2>
+        </Grid2>
+      </Container>
       <Modal open={open} onClose={() => setOpen(false)}>
         <div>
           <form onSubmit={formik.handleSubmit}>
