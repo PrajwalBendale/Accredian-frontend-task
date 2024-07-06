@@ -110,7 +110,7 @@ const App = () => {
               height="100%"
               textAlign="center"
             >
-              <Typography variant="h2" fontWeight={700}>
+              <Typography variant="h1" fontWeight={700}>
                 Let's Learn & Earn
               </Typography>
               <Typography variant="h5" component="p" gutterBottom>
