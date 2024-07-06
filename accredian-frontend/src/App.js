@@ -79,7 +79,7 @@ const App = () => {
     <div>
       <AppBar position="static" color="default">
         <Toolbar>
-          <img src={logo} alt="Accredian" />
+          <img src={logo} width={"12%"} height={"auto"} alt="Accredian" />
           <div style={{ flexGrow: 1 }}></div>
           <nav>
             <Button color="inherit">Courses</Button>
