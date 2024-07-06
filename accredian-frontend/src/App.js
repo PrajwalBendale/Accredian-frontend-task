@@ -110,7 +110,9 @@ const App = () => {
               height="100%"
               textAlign="center"
             >
-              <Typography variant="h2">Let's Learn & Earn</Typography>
+              <Typography variant="h2" fontWeight={700}>
+                Let's Learn & Earn
+              </Typography>
               <Typography variant="h5" component="p" gutterBottom>
                 Get a chance to win up-to{" "}
                 <span style={{ color: "#1A73E8" }}>Rs. 15,000</span>
