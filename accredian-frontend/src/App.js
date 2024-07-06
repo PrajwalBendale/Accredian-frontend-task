@@ -143,7 +143,7 @@ const App = () => {
               style={{
                 position: "absolute",
                 top: "22%",
-                right: "18%",
+                right: "12%",
                 rotate: "180deg",
               }}
               alt=""
