@@ -48,6 +48,7 @@ const App = () => {
       // Handle form submission
       try {
         const response = await axios.post(
+          //`http://localhost:3010/referral`,
           `https://accredian-backend-task-37od.onrender.com/referral`,
           values
         );
@@ -63,6 +64,8 @@ const App = () => {
           toast.error(`${response.data.message}`);
         }
       } catch (error) {
+        resetForm();
+        setOpen(false);
         toast.error(`${error}`);
         console.log(error);
       }
