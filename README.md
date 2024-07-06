@@ -1,2 +1,2 @@
 # Accredian-frontend-task
-## A Referral Page for Accredian with Email notificatio
+## A Referral Page for Accredian with Email notification
