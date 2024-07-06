@@ -87,8 +87,14 @@ const App = () => {
             <Button color="inherit">Refer & Earn</Button>
             <Button color="inherit">Resources</Button>
             <Button color="inherit">About Us</Button>
-            <Button color="inherit">Login</Button>
-            <Button variant="contained" color="primary">
+            <Button color="inherit" href="https://accredian.com/Login">
+              Login
+            </Button>
+            <Button
+              variant="contained"
+              color="primary"
+              href="https://trial.accredian.com"
+            >
               Try for free
             </Button>
           </nav>
@@ -99,6 +105,7 @@ const App = () => {
           mt: 5,
           bgcolor: "#EEF5FF",
           borderRadius: 4,
+          boxShadow: "6px 10px 4px 3px rgba(0, 0, 0, 0.2)",
         }}
       >
         <Grid2 container spacing={2} alignItems="center">
