@@ -31,7 +31,7 @@ const App = () => {
       const res = await axios.get(
         `https://accredian-backend-task-37od.onrender.com/referral`
       );
-      console.log(res.status);
+      console.log(res.data, res.status);
     } catch (error) {
       console.log(error);
     }
