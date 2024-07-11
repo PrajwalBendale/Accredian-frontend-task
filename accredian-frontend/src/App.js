@@ -1,5 +1,5 @@
 // App.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 //import { Button, Modal, TextField, Typography } from "@material-ui";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -25,6 +25,20 @@ import img from "./noteImg.png";
 
 const App = () => {
   const [open, setOpen] = useState(false);
+
+  const chkBackend = async () => {
+    try {
+      const res = await axios.get(
+        `https://accredian-backend-task-37od.onrender.com/referral`
+      );
+      console.log(res.status);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    chkBackend();
+  }, []);
 
   const formik = useFormik({
     initialValues: {
